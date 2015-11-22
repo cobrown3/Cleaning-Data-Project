@@ -19,9 +19,9 @@ Features, activity, as well as test and training subject, X, and Y data were rea
 The features data table contained a column of 561 variable names.  These names were searched for strings containing "-mean()" or "-std()"; the searches returned tables of 33 rows for each of mean and std.
 
 **The following manipulations were performed on both training and test data separately:**
-1. A table was created with columns 1) subject numbers (from subject_train or subject_test) and 2) activity codes (from y_train or y_test). A third column named "set" with the label "train" (or "test") in every row was created to specify which dataset every row came from when the train and test datasets are merged (in a later step); this is so the data can be re-segregated in the same way if desired.
-2. Columns containing mean and std features were extracted from the X_train (or X_test) dataset. These columns were named using the activity descriptions from the features dataset.
-3. Complete datasets for train (or test) data were created by combining the subject/activity/set table (from above) with the tables containing the 33 mean and 33 std columns of features data.
+1.A table was created with columns 1) subject numbers (from subject_train or subject_test) and 2) activity codes (from y_train or y_test). A third column named "set" with the label "train" (or "test") in every row was created to specify which dataset every row came from when the train and test datasets are merged (in a later step); this is so the data can be re-segregated in the same way if desired.
+2.Columns containing mean and std features were extracted from the X_train (or X_test) dataset. These columns were named using the activity descriptions from the features dataset.
+3.Complete datasets for train (or test) data were created by combining the subject/activity/set table (from above) with the tables containing the 33 mean and 33 std columns of features data.
 The final train and test datasets therefore each had 69 columns.
 
 ## STEP 3: Combining train and test datasets
