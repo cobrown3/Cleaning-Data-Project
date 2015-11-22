@@ -34,6 +34,6 @@ This data table was then merged with the activity labels table, using the key "a
 ## STEP 4: Create new tidy dataset with calculated average of each variable for each activity/subject
 After calling library() for the package dplyr, the final prepared dataset from STEP 3 above was grouped by subject and activity descriptor, and summarized with the mean() function. The result is a tidy dataset with 180 rows for each subject-activity pair and 68 columns: subject, activity (character string descriptions), and 66 features variables (33 mean and 33 std) for which the average by subject and activity were calculated. The data was ordered by subject and activity, both ascending.
 
-*The final tidy dataset was chosen to be of the "short and wide" form as opposed to the "tall and narrow" form. The logic for this is that **each observation** for a subject in an activity is from a single device and a single time window, from which all of the various data features were derived.*
+*The final tidy dataset was chosen to be of the "short and wide" form as opposed to the "tall and narrow" form. The logic for this is that __each observation__ for a subject in an activity is from a single device and a single time window, from which all of the various data features were derived.*
 
 This final tidy dataset was written to a .txt file. It can be read back into R using read.table with argument header=TRUE.
