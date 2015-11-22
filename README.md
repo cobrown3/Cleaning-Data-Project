@@ -1,7 +1,4 @@
-# Cleaning-Data-Project
-Repo for Coursera Getting and Cleaning Data course project.
-
-# README for Coursera "Gettting and Cleaning Data" Course Project
+# README for Coursera "Getting and Cleaning Data" Course Project
 ### Accompanying run_analysis.R script for preparing UCI HAR data into a tidy and summarized dataset
 
 ### README describes the rationale and stepwise description of the data extraction and analysis processes
